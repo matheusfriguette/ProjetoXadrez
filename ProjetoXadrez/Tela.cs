@@ -2,7 +2,7 @@
 using tabuleiro;
 using Xadrez;
 
-namespace Diamante
+namespace ProjetoXadrez
 {
     class Tela
     {
