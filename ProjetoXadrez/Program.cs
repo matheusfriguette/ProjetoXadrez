@@ -2,7 +2,7 @@
 using tabuleiro;
 using xadrez;
 
-namespace ProjetoXadrez
+namespace xadrez_console
 {
     class Program
     {
@@ -20,10 +20,7 @@ namespace ProjetoXadrez
                     {
 
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
 
                         Console.WriteLine();
