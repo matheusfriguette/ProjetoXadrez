@@ -1,19 +1,18 @@
-﻿using System;
-
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     class Tabuleiro
     {
-        private Peca[,] pecas;
+
         public int linhas { get; set; }
         public int colunas { get; set; }
+        private Peca[,] pecas;
 
         public Tabuleiro(int linhas, int colunas)
         {
             this.linhas = linhas;
             this.colunas = colunas;
             pecas = new Peca[linhas, colunas];
+
         }
 
         public Peca peca(int linha, int coluna)
@@ -67,7 +66,8 @@ namespace tabuleiro
         {
             if (!posicaoValida(pos))
             {
-                throw new TabuleiroException("Posicao inválida!");
+                throw new TabuleiroException("Posição invalida!");
+
             }
         }
     }

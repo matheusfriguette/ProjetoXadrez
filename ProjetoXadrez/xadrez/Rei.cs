@@ -1,6 +1,6 @@
 ﻿using tabuleiro;
 
-namespace Xadrez
+namespace xadrez
 {
     class Rei : Peca
     {
@@ -24,25 +24,25 @@ namespace Xadrez
 
             Posicao pos = new Posicao(0, 0);
 
-            // acima
+            // acima 
             pos.definirValores(posicao.linha - 1, posicao.coluna);
-            if(tab.posicaoValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
-            // ne
+            // ne 
             pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
-            // direita
+            // direita 
             pos.definirValores(posicao.linha, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
-            // se
+            // se 
             pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -72,7 +72,9 @@ namespace Xadrez
             {
                 mat[pos.linha, pos.coluna] = true;
             }
+
             return mat;
         }
+
     }
 }
